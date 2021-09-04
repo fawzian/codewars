@@ -16,3 +16,26 @@
 // #Output
 
 // The middle character(s) of the word represented as a string.
+
+
+function getMiddle(s)
+{
+  /*
+  understand: find the MEDIAN letter of each string
+  
+  map: 
+  if the s.length / 2 === 0
+    slice the string to the middle two
+  else 
+    slice ---- divide the length by 2 
+  */
+  
+  let middleNum = s.length / 2
+  
+if (s.length % 2 === 0) {
+  return s.slice(middleNum - 1, middleNum + 1)
+} else {
+  return s.charAt(middleNum)
+}
+  
+}
